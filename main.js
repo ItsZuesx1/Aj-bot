@@ -82,4 +82,4 @@ if(command === 'say'){
         client.commands.get('say').execute(message ,args)
 }
 })
-client.login(token);
+client.login(process.env.BOT_TOKEN);
