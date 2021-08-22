@@ -82,4 +82,4 @@ if(command === 'say'){
         client.commands.get('say').execute(message ,args)
 }
 })
-client.login('ODY3NTA4ODc2NTM0NjExOTY5.YPiImQ.ErtpG14QfMCfV1iWpy0Y85MUIUU');
+client.login(token);
