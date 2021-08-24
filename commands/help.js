@@ -10,12 +10,9 @@ var embed = new Discord.MessageEmbed()
 .setAuthor(`My Prefix In ${message.guild.name} Is ${prefix}`)
 .setFooter(`${message.author.tag}`)
 .setDescription('COMMANDS LIST')
-.addField('Ban 
-          Ban Any User You Want')
-.addField('Kick 
-          Kick Any User Away')
-.addField('User 
-          Show User Information')
+.addField('Ban Ban Any User You Want')
+.addField('Kick Kick Any User Away')
+.addField('User Show User Information')
 .setColor('RANDOM')
 .setTimestamp()
 .setTitle('*** Commands***')
