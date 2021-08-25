@@ -25,7 +25,7 @@ client.on('ready', ready =>{
 console.log('Im Ready')
 
 })
-
+  
 client.on('message', message =>{
 if(!message.content.startsWith(prefix) || message.author.bot) return;
 const args =  message.content.slice(prefix.length).split(/ +/);
@@ -81,5 +81,9 @@ const command = args.shift().toLowerCase();
 if(command === 'say'){
         client.commands.get('say').execute(message ,args)
 }
-})
+});
+client.on('channel',channel => {
+ const channel = client.channels.cache.get('')
+if(!channel) return; message.channel.reply('You Dont Pick Any Channel!!!')
+     channel.join().catch(err =>{console.log(e)});
 client.login(process.env.BOT_TOKEN);
