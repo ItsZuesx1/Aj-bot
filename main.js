@@ -86,6 +86,7 @@ client.on('connect',connect => {
 if(!message.content.startswith(prefix) || message.author.bot return;
    const command = args.shift().toLowerCase();
      const channel = message.member.voice.channel;
+       if(!channel){ return; message.channel.reply('please join any channel!')};
      const args = message.content.slice(prefix.length).split(/ +/);
      if(command === 'join v'){
           client.commands.get('join v').execute(message , args , channel)};
