@@ -88,5 +88,5 @@ if(!message.content.startswith(prefix) || message.author.bot return;
      const channel = message.member.voice.channel;
      const args = message.content.slice(prefix.length).split(/ +/);
      if(command === 'join v'){
-          client.commands.get('join v').execute(message , args , channel)
+          client.commands.get('join v').execute(message , args , channel)};
      client.login(process.env.BOT_TOKEN);
