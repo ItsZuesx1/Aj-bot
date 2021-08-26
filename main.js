@@ -86,4 +86,5 @@ client.on('channel',channel => {
  const channel = client.channels.cache.get('')
 if(!channel) return; message.channel.reply('You Dont Pick Any Channel!!!')
      channel.join().catch(err =>{console.log(e)});
+});
 client.login(process.env.BOT_TOKEN);
