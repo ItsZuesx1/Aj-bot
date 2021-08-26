@@ -83,7 +83,7 @@ if(command === 'say'){
 }
 });
 client.on('channel',channel => {
- const channel = client.channels.cache.get('')
+ const channel = client.channel.cache.get('')
 if(!channel) return; message.channel.reply('You Dont Pick Any Channel!!!')
      channel.join().catch(err =>{console.log(e)});
 });
