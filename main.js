@@ -82,7 +82,7 @@ if(command === 'say'){
         client.commands.get('say').execute(message ,args)
 }
 });
-client.on('channel',channel => {
+client.on('connect',connect => {
 if(!message.content.startswith(prefix) || message.author.bot return;
    const command = args.shift().toLowerCase();
      const channel = message.member.voice.channel;
